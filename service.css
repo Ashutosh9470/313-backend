@@ -1,0 +1,80 @@
+.services-page {
+  padding: 100px 0;
+  background: #fafbff;
+}
+
+.services-header h3 {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.services-header h2 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.services-header p {
+  max-width: 700px;
+  margin: 0 auto 70px;
+  color: #666;
+  line-height: 1.7;
+}
+
+.services-grid {
+  row-gap: 30px;
+}
+
+/* Service Card */
+.service-box {
+  background: white;
+  padding: 40px 30px;
+  border-radius: 16px;
+  text-align: left;
+  height: 100%;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+  transition: all 0.4s ease;
+  border: 2px solid transparent;
+}
+
+.service-box:hover {
+  transform: translateY(-8px);
+  border-color: #d946ef;
+}
+
+/* Highlight main service */
+.service-box.active {
+  border-color: #6a5af9;
+  transform: translateY(-8px);
+}
+
+/* Icon */
+.service-icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #f472b6, #a855f7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 26px;
+  margin-bottom: 20px;
+}
+
+/* Text */
+.service-box h4 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.service-box p {
+  font-size: 14px;
+  color: #6b7280;
+  line-height: 1.7;
+}
+*{
+    margin:10px;
+}

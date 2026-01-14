@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SOV Analyzer</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ================= NAVBAR ================= -->
+  <nav class="navbar navbar-expand-lg fixed-top custom-nav">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">
+        <span class="logo-dot"></span>SOV
+      </a>
+
+      <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item"><a class="nav-link" href="#">About us</a></li>
+          <li class="nav-item"><a class="nav-link" href="service.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Market Scenario</a></li>
+          <li class="nav-item"><a class="nav-link" href="how-it-work.html">How it Works</a></li>
+        </ul>
+
+        <button class="btn btn-contact">Contact us</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ================= HERO SECTION ================= -->
+  <section class="hero-section">
+    <div class="container">
+      <div class="row align-items-center">
+
+        <!-- LEFT CONTENT -->
+        <div class="col-md-6 hero-text">
+          <h1>
+            Measure you <span class="pink">Product's</span><br/>
+            <span class="purple">digital presence</span>
+          </h1>
+
+          <p>
+            Track Share of Voice, competitor visibility, and market
+            dominance across platforms like Google, YouTube, and Instagram.
+          </p>
+          
+          <!-- <button id="startBtn" class="btn btn-primary btn-lg">
+            Let's get started!
+          </button> -->
+          <a href="service.html" class="btn btn-primary btn-lg">
+          Let's get started!
+          </a>
+
+        </div>
+
+        <!-- RIGHT IMAGE -->
+        <div class="col-md-6 text-center">
+          <img src="./asset/pic3.png"
+               alt="Market Intelligence Illustration"
+               class="img-fluid hero-img">
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SERVICES ================= -->
+  <section class="services-section">
+    <div class="container">
+      <h2 class="text-center">Services we offer</h2>
+
+      <div class="slider-container">
+        <div class="slider-track" id="sliderTrack">
+
+          <!-- CARD 1 -->
+          <div class="service-card">
+            <div class="icon">📈</div>
+            <h4>Market Boost</h4>
+            <p>
+              Market Boost helps brands amplify their digital presence by
+              identifying visibility gaps and competitive opportunities across online channels.
+            </p>
+          </div>
+
+          <!-- CARD 2 (ACTIVE INITIALLY) -->
+          <div class="service-card active">
+            <div class="icon">📊</div>
+            <h4>Share of Voice (SoV)</h4>
+            <p>
+              A metric that shows how visible a brand or product is compared to its competitors. Calculated as the percentage of total market conversations, mentions, or engagement that a product captures within a category.
+            </p>
+          </div>
+
+          <!-- CARD 3 -->
+          <div class="service-card">
+            <div class="icon">🌐</div>
+            <h4>Market Scenario</h4>
+            <p>
+              The digital marketplace is highly competitive and constantly evolving, with brands competing for attention across search engines, social media, and content platforms.
+            </p>
+          </div>
+
+          <!-- CARD 4 -->
+          <div class="service-card">
+            <div class="icon">💻</div>
+            <h4>Software Testing</h4>
+            <p>
+              A Website is an extension of yourself and we can help you to express it properly. Your website is your number one marketing asset because we live in a digital age.
+            </p>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- CONTROLS -->
+      <div class="slider-controls">
+        <button id="prevBtn" class="nav-btn">‹</button>
+        <div class="dots" id="dots"></div>
+        <button id="nextBtn" class="nav-btn">›</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= WHY TRUST US ================= -->
+  <section class="trust-section">
+    <div class="container">
+      <div class="row align-items-center">
+        
+        <!-- LEFT CONTENT -->
+        <div class="col-md-6">
+          <h2>Why Companies Can Trust Us?</h2>
+          <p>
+            We deliver transparent, data-driven market intelligence built entirely on publicly available digital signals. Our platform uses automated, platform-agnostic analysis to eliminate bias, manual errors, and guesswork.
+          </p>
+          <a href="#" class="see-more-link">See more Informations <span>→</span></a>
+        </div>
+
+        <!-- RIGHT IMAGE -->
+        <div class="col-md-6">
+          <div class="trust-image">
+            <img src="./asset/pic1.png" alt="Team collaboration">
+            <!-- <div class="play-button"> -->
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="white">
+                <path d="M8 5v14l11-7z"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= MEET THE PEOPLE ================= -->
+  <section class="people-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-line"></span>
+        <h3>Meet the People</h3>
+        <h2>We are Working With</h2>
+      </div>
+  
+  <div class="logo-slider">
+  <div class="logo-track" id="logoTrack">
+    <div class="logo-item"><img src="./asset/pic2.png" alt="Sampath"></div>
+    <div class="logo-item"><img src="./asset/pic2.png" alt="AdClipse"></div>
+    <div class="logo-item"><img src="./asset/pic2.png" alt="PJC"></div>
+    <div class="logo-item"><img src="assets/clickorder.png" alt="ClickOrder"></div>
+    <div class="logo-item"><img src="assets/techmate.png" alt="TechMate"></div>
+    <div class="logo-item"><img src="assets/brandworks.png" alt="BrandWorks"></div>
+  </div>
+</div>
+
+<div class="logo-controls">
+  <button id="logoPrev" class="logo-nav-btn">‹</button>
+  <button id="logoNext" class="logo-nav-btn">›</button>
+</div>
+
+
+  <!-- ================= TESTIMONIALS ================= -->
+  <section class="testimonial-section">
+    <div class="container">
+      <h2 class="text-center">Why cutomers love<br/>working with us</h2>
+      
+      <p class="testimonial-intro text-center">
+        We present authentic market insights by analyzing real, publicly available product reviews, discussions, and mentions across digital platforms. Instead of relying on surveys or assumptions, our platform reflects genuine customer sentiment and real-world engagement.
+      </p>
+
+      <div class="testimonial-slider">
+        <div class="testimonial-track" id="testimonialTrack">
+          
+          <div class="testimonial-card">
+            <div class="stars">⭐⭐⭐⭐⭐</div>
+            <p class="review-text">Reviewed On Drive</p>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="stars">⭐⭐⭐⭐⭐</div>
+            <p class="review-text">Reviewed On Drive</p>
+          </div>
+
+          <div class="testimonial-card active">
+            <img src="./asset/pic3.png" alt="ds" class="user-img">
+            <div class="stars">⭐⭐⭐⭐⭐</div>
+            <h4>Daya Shankar</h4>
+            <p class="user-role">Software Engineer</p>
+            <p class="review-text">Reviewed On Drive</p>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="stars">⭐⭐⭐⭐⭐</div>
+            <p class="review-text">Reviewed On Drive</p>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="stars">⭐⭐⭐⭐⭐</div>
+            <p class="review-text">Reviewed On Drive</p>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="testimonial-controls">
+        <button id="testimonialPrev" class="testimonial-nav-btn">‹</button>
+        <button id="testimonialNext" class="testimonial-nav-btn">›</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  
+  <!-- Axios -->
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  
+  <!-- Custom JS -->
+  <script src="app.js"></script>
+</body>
+</html>
