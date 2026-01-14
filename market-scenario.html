@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Market Scenario - SOV Analyzer</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Chart.js for graphs -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="market-scenario.css" />
+</head>
+<body>
+
+  <!-- ================= NAVBAR ================= -->
+  <nav class="navbar navbar-expand-lg fixed-top custom-nav">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">
+        <span class="logo-dot"></span>SOV
+      </a>
+
+      <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">About us</a></li>
+          <li class="nav-item"><a class="nav-link" href="service.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link active" href="market-scenario.html">Market Scenario</a></li>
+          <li class="nav-item"><a class="nav-link" href="how-it-work.html">How it Works</a></li>
+        </ul>
+
+        <a href="contact.html">
+          <button class="btn btn-contact">Contact us</button>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ================= HERO SECTION ================= -->
+  <section class="market-hero">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-line"></span>
+        <h1>Digital Market Scenario</h1>
+        <p>Real-time market intelligence and competitive landscape analysis across platforms</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= MARKET OVERVIEW ================= -->
+  <section class="market-overview">
+    <div class="container">
+      <div class="row">
+        <!-- Market Size Card -->
+        <div class="col-md-6 col-lg-3">
+          <div class="metric-card">
+            <div class="metric-icon">💰</div>
+            <h4>Global Digital Market</h4>
+            <p class="metric-value">$2.8T</p>
+            <p class="metric-desc">Total market size worldwide</p>
+            <div class="metric-growth">
+              <span class="badge bg-success">+18% YoY</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Active Users Card -->
+        <div class="col-md-6 col-lg-3">
+          <div class="metric-card">
+            <div class="metric-icon">👥</div>
+            <h4>Active Digital Users</h4>
+            <p class="metric-value">5.3B</p>
+            <p class="metric-desc">Global internet users</p>
+            <div class="metric-growth">
+              <span class="badge bg-success">+8.2% YoY</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Market Growth Card -->
+        <div class="col-md-6 col-lg-3">
+          <div class="metric-card">
+            <div class="metric-icon">📈</div>
+            <h4>E-Commerce Growth</h4>
+            <p class="metric-value">22%</p>
+            <p class="metric-desc">Annual growth rate</p>
+            <div class="metric-growth">
+              <span class="badge bg-success">+5% vs last quarter</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Competition Card -->
+        <div class="col-md-6 col-lg-3">
+          <div class="metric-card">
+            <div class="metric-icon">🎯</div>
+            <h4>Competitors Tracked</h4>
+            <p class="metric-value">10K+</p>
+            <p class="metric-desc">Brands in our database</p>
+            <div class="metric-growth">
+              <span class="badge bg-info">Real-time data</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CHARTS SECTION ================= -->
+  <section class="charts-section">
+    <div class="container">
+      <h2 class="section-title">Market Trends & Analytics</h2>
+
+      <div class="row">
+        <!-- Platform Distribution Chart -->
+        <div class="col-lg-6">
+          <div class="chart-card">
+            <h4>Platform Market Share</h4>
+            <div class="chart-container">
+              <canvas id="platformChart"></canvas>
+            </div>
+          </div>
+        </div>
+
+        <!-- Revenue Growth Chart -->
+        <div class="col-lg-6">
+          <div class="chart-card">
+            <h4>Digital Revenue Growth (2023-2026)</h4>
+            <div class="chart-container">
+              <canvas id="revenueChart"></canvas>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row mt-4">
+        <!-- Market Segment Chart -->
+        <div class="col-lg-6">
+          <div class="chart-card">
+            <h4>Market Segment Distribution</h4>
+            <div class="chart-container">
+              <canvas id="segmentChart"></canvas>
+            </div>
+          </div>
+        </div>
+
+        <!-- Growth Rate Chart -->
+        <div class="col-lg-6">
+          <div class="chart-card">
+            <h4>Sector Growth Comparison</h4>
+            <div class="chart-container">
+              <canvas id="growthChart"></canvas>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= TOP PLAYERS ================= -->
+  <section class="top-players">
+    <div class="container">
+      <h2 class="section-title">Market Leaders</h2>
+      
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="player-card">
+            <div class="rank">1</div>
+            <div class="player-info">
+              <h4>Amazon</h4>
+              <p class="market-cap">Market Cap: $1.9T</p>
+              <div class="metric-bars">
+                <div class="bar-item">
+                  <span>Visibility</span>
+                  <div class="progress">
+                    <div class="progress-bar" style="width: 95%"></div>
+                  </div>
+                </div>
+                <div class="bar-item">
+                  <span>Engagement</span>
+                  <div class="progress">
+                    <div class="progress-bar" style="width: 87%"></div>
+                  </div>
+                </div>
+              </div>
+              <p class="market-desc">E-commerce & Cloud leader with dominant market presence across all platforms</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="player-card">
+            <div class="rank">2</div>
+            <div class="player-info">
+              <h4>Google</h4>
+              <p class="market-cap">Market Cap: $1.8T</p>
+              <div class="metric-bars">
+                <div class="bar-item">
+                  <span>Visibility</span>
+                  <div class="progress">
+                    <div class="progress-bar" style="width: 98%"></div>
+                  </div>
+                </div>
+                <div class="bar-item">
+                  <span>Engagement</span>
+                  <div class="progress">
+                    <div class="progress-bar" style="width: 89%"></div>
+                  </div>
+                </div>
+              </div>
+              <p class="market-desc">Search & advertising powerhouse with unmatched digital visibility and reach</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="player-card">
+            <div class="rank">3</div>
+            <div class="player-info">
+              <h4>Microsoft</h4>
+              <p class="market-cap">Market Cap: $3.2T</p>
+              <div class="metric-bars">
+                <div class="bar-item">
+                  <span>Visibility</span>
+                  <div class="progress">
+                    <div class="progress-bar" style="width: 92%"></div>
+                  </div>
+                </div>
+                <div class="bar-item">
+                  <span>Engagement</span>
+                  <div class="progress">
+                    <div class="progress-bar" style="width: 85%"></div>
+                  </div>
+                </div>
+              </div>
+              <p class="market-desc">Enterprise & cloud computing leader with strong B2B presence</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row mt-4">
+        <div class="col-lg-4">
+          <div class="player-card">
+            <div class="rank">4</div>
+            <div class="player-info">
+              <h4>Meta Platforms</h4>
+              <p class="market-cap">Market Cap: $1.3T</p>
+              <div class="metric-bars">
+                <div class="bar-item">
+                  <span>Visibility</span>
+                  <div class="progress">
+                    <div class="progress-bar" style="width: 88%"></div>
+                  </div>
+                </div>
+                <div class="bar-item">
+                  <span>Engagement</span>
+                  <div class="progress">
+                    <div class="progress-bar" style="width: 92%"></div>
+                  </div>
+                </div>
+              </div>
+              <p class="market-desc">Social media dominance with highest user engagement rates globally</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="player-card">
+            <div class="rank">5</div>
+            <div class="player-info">
+              <h4>Apple</h4>
+              <p class="market-cap">Market Cap: $3.4T</p>
+              <div class="metric-bars">
+                <div class="bar-item">
+                  <span>Visibility</span>
+                  <div class="progress">
+                    <div class="progress-bar" style="width: 90%"></div>
+                  </div>
+                </div>
+                <div class="bar-item">
+                  <span>Engagement</span>
+                  <div class="progress">
+                    <div class="progress-bar" style="width: 88%"></div>
+                  </div>
+                </div>
+              </div>
+              <p class="market-desc">Premium brand with loyal user base and strong ecosystem presence</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="player-card">
+            <div class="rank">6</div>
+            <div class="player-info">
+              <h4>Tesla</h4>
+              <p class="market-cap">Market Cap: $1.1T</p>
+              <div class="metric-bars">
+                <div class="bar-item">
+                  <span>Visibility</span>
+                  <div class="progress">
+                    <div class="progress-bar" style="width: 85%"></div>
+                  </div>
+                </div>
+                <div class="bar-item">
+                  <span>Engagement</span>
+                  <div class="progress">
+                    <div class="progress-bar" style="width: 91%"></div>
+                  </div>
+                </div>
+              </div>
+              <p class="market-desc">Innovation leader with high brand engagement and market sentiment</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= INSIGHTS SECTION ================= -->
+  <section class="insights-section">
+    <div class="container">
+      <h2 class="section-title">Key Market Insights</h2>
+
+      <div class="row">
+        <div class="col-md-6 col-lg-4">
+          <div class="insight-card">
+            <div class="insight-number">01</div>
+            <h4>Mobile First Dominance</h4>
+            <p>Over 72% of digital interactions now happen on mobile devices, reshaping how brands approach market penetration.</p>
+            <a href="#" class="insight-link">Learn more →</a>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="insight-card">
+            <div class="insight-number">02</div>
+            <h4>AI-Powered Marketing</h4>
+            <p>Artificial intelligence is now central to market analysis, with 64% of businesses using AI for customer insights.</p>
+            <a href="#" class="insight-link">Learn more →</a>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="insight-card">
+            <div class="insight-number">03</div>
+            <h4>Social Commerce Rise</h4>
+            <p>Social platforms are becoming transaction hubs, with social commerce projected to reach $1.2T by 2025.</p>
+            <a href="#" class="insight-link">Learn more →</a>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="insight-card">
+            <div class="insight-number">04</div>
+            <h4>Data Privacy Shift</h4>
+            <p>Privacy regulations are reshaping data collection strategies, making first-party data more valuable than ever.</p>
+            <a href="#" class="insight-link">Learn more →</a>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="insight-card">
+            <div class="insight-number">05</div>
+            <h4>Creator Economy Growth</h4>
+            <p>Creator-driven content generates 8x higher engagement rates, becoming a crucial marketing channel.</p>
+            <a href="#" class="insight-link">Learn more →</a>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="insight-card">
+            <div class="insight-number">06</div>
+            <h4>Metaverse Opportunities</h4>
+            <p>Virtual spaces are creating new market opportunities, with metaverse commerce expected to exceed $500B.</p>
+            <a href="#" class="insight-link">Learn more →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Chart JS -->
+  <script src="market-scenario.js"></script>
+
+</body>
+</html>

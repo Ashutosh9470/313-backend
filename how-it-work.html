@@ -3,75 +3,114 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>how-it-work</title>
+    <title>How it Works - SOV Analyzer</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="how-it-work.css">
 </head>
 <body>
-      <!-- Header -->
-    <div class="section-header text-center">
-      <span class="section-line"></span>
-      <!-- <h3>Process</h3> -->
-      <h1>How It Works</h1>
-      <p>
-        Our platform converts public digital signals into meaningful
-        market intelligence through a transparent, automated process.
-      </p>
-    </div>
+
+    <!-- ================= NAVBAR ================= -->
+    <nav class="navbar navbar-expand-lg fixed-top custom-nav">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">
+                <span class="logo-dot"></span>SOV
+            </a>
+
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navMenu">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">About us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="service.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="market-scenario.html">Market Scenario</a></li>
+                <button class="btn btn-contact">Contact us</button>
+            </div>
+        </div>
+    </nav>
+
     <!-- ================= HOW IT WORKS ================= -->
-<section class="how-it-works">
-  <div class="container">
-    <!-- Steps -->
-    <div class="row work-steps">
+    <section class="how-it-works">
+        <div class="container">
+            
+            <!-- Header -->
+            <div class="section-header text-center">
+                <span class="section-line"></span>
+                <h1>How It Works</h1>
+                <p>
+                    Our platform converts public digital signals into meaningful
+                    market intelligence through a transparent, automated process.
+                </p>
+            </div>
 
-      <div class="col-md-3">
-        <div class="work-card">
-          <div class="step-number">01</div>
-          <div class="work-icon">🔗</div>
-          <h4>Platform Coverage</h4>
-          <p>
-            We continuously monitor publicly available data across search
-            engines, social media, and content platforms.
-          </p>
-        </div>
-      </div>
+            <!-- Steps -->
+            <div class="row work-steps">
 
-      <div class="col-md-3">
-        <div class="work-card">
-          <div class="step-number">02</div>
-          <div class="work-icon">📥</div>
-          <h4>Data Collection</h4>
-          <p>
-            Automated systems collect product mentions, discussions,
-            reviews, and engagement signals in real time.
-          </p>
-        </div>
-      </div>
+                <div class="col-md-3">
+                    <div class="work-card">
+                        <div class="step-number">01</div>
+                        <div class="work-icon">🔗</div>
+                        <h4>Platform Coverage</h4>
+                        <p>
+                            We continuously monitor publicly available data across search
+                            engines, social media, and content platforms.
+                        </p>
+                    </div>
+                </div>
 
-      <div class="col-md-3">
-        <div class="work-card">
-          <div class="step-number">03</div>
-          <div class="work-icon">📊</div>
-          <h4>Analysis & Metrics</h4>
-          <p>
-            We compute Share of Voice, market visibility, trends,
-            and competitor benchmarks using unbiased algorithms.
-          </p>
-        </div>
-      </div>
+                <div class="col-md-3">
+                    <div class="work-card">
+                        <div class="step-number">02</div>
+                        <div class="work-icon">📥</div>
+                        <h4>Data Collection</h4>
+                        <p>
+                            Automated systems collect product mentions, discussions,
+                            reviews, and engagement signals in real time.
+                        </p>
+                    </div>
+                </div>
 
-      <div class="col-md-3">
-        <div class="work-card">
-          <div class="step-number">04</div>
-          <div class="work-icon">🌍</div>
-          <h4>Market Insights</h4>
-          <p>
-            Clear insights reveal market dynamics, competitive gaps,
-            and opportunities for strategic decision-making.
-          </p>
+                <div class="col-md-3">
+                    <div class="work-card">
+                        <div class="step-number">03</div>
+                        <div class="work-icon">📊</div>
+                        <h4>Analysis & Metrics</h4>
+                        <p>
+                            We compute Share of Voice, market visibility, trends,
+                            and competitor benchmarks using unbiased algorithms.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="work-card">
+                        <div class="step-number">04</div>
+                        <div class="work-icon">🌍</div>
+                        <h4>Market Insights</h4>
+                        <p>
+                            Clear insights reveal market dynamics, competitive gaps,
+                            and opportunities for strategic decision-making.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
         </div>
-      </div>
-    </div>
-  </div>
-</section>
+    </section>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Axios -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    
+    <!-- Custom JS -->
+    <script src="app.js"></script>
 </body>
 </html>
