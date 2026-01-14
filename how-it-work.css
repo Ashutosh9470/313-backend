@@ -1,7 +1,7 @@
 /* ================= HOW IT WORKS ================= */
 .how-it-works {
   padding: 140px 0 100px 0;
-  background: linear-gradient(135deg, #f8f7ff 0%, #ffffff 100%);
+  background: var(--bg-gradient, linear-gradient(135deg, #f8f7ff 0%, #ffffff 100%));
   min-height: 100vh;
 }
 
@@ -24,14 +24,14 @@
   font-size: 2.5rem;
   font-weight: 800;
   margin-bottom: 25px;
-  color: #1a1a1a;
+  color: var(--text-primary, #1a1a1a);
   letter-spacing: -0.5px;
 }
 
 .section-header p {
   max-width: 700px;
   margin: 0 auto;
-  color: #555;
+  color: var(--text-secondary, #555);
   line-height: 1.9;
   font-size: 1.05rem;
   font-weight: 500;
@@ -43,12 +43,12 @@
 }
 
 .work-card {
-  background: white;
+  background: var(--card-bg, white);
   padding: 45px 35px;
   border-radius: 18px;
   height: 100%;
   position: relative;
-  box-shadow: 0 10px 35px rgba(0,0,0,0.08);
+  box-shadow: var(--card-shadow, 0 10px 35px rgba(0,0,0,0.08));
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   border: 2px solid transparent;
   overflow: hidden;

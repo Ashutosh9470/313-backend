@@ -40,7 +40,7 @@ if (form) {
 
       /* 
       // Example Axios API call:
-      const response = await axios.post('https://your-api.com/contact', {
+      const response = await axios.post('https://your-api.com/contact'), {
         name,
         email,
         company,
