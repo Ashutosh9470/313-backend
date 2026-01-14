@@ -140,6 +140,34 @@ if (startBtn) {
   });
 }
 
+// ================= NAVBAR ACTIVE STATE DETECTION =================
+function setActiveNavLink() {
+  // Get current page filename
+  const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+  
+  // Get all nav links
+  const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+  
+  // Remove active class from all links
+  navLinks.forEach(link => link.classList.remove('active'));
+  
+  // Add active class to the matching link
+  navLinks.forEach(link => {
+    const href = link.getAttribute('href');
+    
+    // Check if current page matches the link
+    if (href === '#' && (currentPage === 'index.html' || currentPage === '')) {
+      // For "About us" link with href="#"
+      link.classList.add('active');
+    } else if (href && href !== '#' && currentPage.includes(href.replace('.html', ''))) {
+      // For other links, match the filename
+      link.classList.add('active');
+    }
+  });
+}
+
+// Set active nav link on page load
+document.addEventListener('DOMContentLoaded', setActiveNavLink);
 
 // ================= EXAMPLE AXIOS USAGE =================
 // Uncomment and modify as needed

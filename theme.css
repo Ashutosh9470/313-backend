@@ -106,6 +106,10 @@ body {
   color: var(--text-primary) !important;
 }
 
+.nav-link.active {
+  color: var(--accent-primary) !important;
+}
+
 /* Cards and Sections */
 .service-card,
 .chart-card,

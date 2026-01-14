@@ -36,6 +36,14 @@
   width: 100%;
 }
 
+.nav-link.active {
+  color: #6a5af9 !important;
+}
+
+.nav-link.active::after {
+  width: 100%;
+}
+
 .btn-contact {
   background: linear-gradient(135deg, #6a5af9, #9b5cf6);
   color: white;
