@@ -1,68 +1,147 @@
-<!-- ================= SERVICES PAGE ================= -->
- <!DOCTYPE html>
- <html lang="en">
- <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Service page</title>
-     <link rel="stylesheet" href="service.css" />
- </head>
- <body>
-        <div class="services-header text-center">
-      <span class="section-line"></span>
-      <h3>Our Services</h3>
-      <h2>Powerful Market Intelligence Solutions</h2>
-      <p>
-        We help brands understand, measure, and improve their digital presence
-        through data-driven insights.
-      </p>
-    </div>
-<section class="services-page">
-  <div class="container">
-    <!-- Services Grid -->
-    <div class="row services-grid">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services - SOV Analyzer</title>
 
-      <!-- Market Boost -->
-      <div class="col-md-4">
-        <div class="service-box">
-          <div class="service-icon">📈</div>
-          <h4>Market Boost</h4>
-          <p>
-            Market Boost helps brands amplify their digital presence by
-            identifying visibility gaps and competitive opportunities across
-            online channels.
-          </p>
-        </div>
-      </div>
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
-      <!-- Share of Voice -->
-      <div class="col-md-4">
-        <div class="service-box">
-          <div class="service-icon">📊</div>
-          <h4>Share of Voice (SoV)</h4>
-          <p>
-            A metric that shows how visible a brand or product is compared to
-            its competitors. Calculated as the percentage of total market
-            conversations, mentions, or engagement within a category.
-          </p>
-        </div>
-      </div>
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="service.css" />
+</head>
+<body>
 
-      <!-- Market Scenario -->
-      <div class="col-md-4">
-        <div class="service-box">
-          <div class="service-icon">🌐</div>
-          <h4>Market Scenario</h4>
-          <p>
-            The digital marketplace is highly competitive and constantly
-            evolving, with brands competing for attention across search engines,
-            social media, and content platforms.
-          </p>
-        </div>
+  <!-- ================= NAVBAR ================= -->
+  <nav class="navbar navbar-expand-lg fixed-top custom-nav">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">
+        <span class="logo-dot"></span>SOV
+      </a>
+
+      <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">About us</a></li>
+          <li class="nav-item"><a class="nav-link active" href="service.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Market Scenario</a></li>
+          <li class="nav-item"><a class="nav-link" href="how-it-work.html">How it Works</a></li>
+        </ul>
+
+        <button class="btn btn-contact">Contact us</button>
       </div>
     </div>
-  </div>
-</section>    
- </body>
- </html>
+  </nav>
 
+  <!-- ================= SERVICES PAGE ================= -->
+  <section class="services-page">
+    <div class="container">
+      
+      <!-- Services Header -->
+      <div class="services-header text-center">
+        <span class="section-line"></span>
+        <h2>Powerful Market Intelligence Solutions</h2>
+        <p>
+          We help brands understand, measure, and improve their digital presence
+          through data-driven insights.
+        </p>
+      </div>
+
+      <!-- Services Grid -->
+      <div class="row services-grid">
+
+        <!-- Market Boost -->
+        <div class="col-md-4">
+          <div class="service-box">
+            <div class="service-icon">📈</div>
+            <h4>Market Boost</h4>
+            <p>
+              Market Boost helps brands amplify their digital presence by
+              identifying visibility gaps and competitive opportunities across
+              online channels.
+            </p>
+          </div>
+        </div>
+
+        <!-- Share of Voice -->
+        <div class="col-md-4">
+          <div class="service-box active">
+            <div class="service-icon">📊</div>
+            <h4>Share of Voice (SoV)</h4>
+            <p>
+              A metric that shows how visible a brand or product is compared to
+              its competitors. Calculated as the percentage of total market
+              conversations, mentions, or engagement within a category.
+            </p>
+          </div>
+        </div>
+
+        <!-- Market Scenario -->
+        <div class="col-md-4">
+          <div class="service-box">
+            <div class="service-icon">🌐</div>
+            <h4>Market Scenario</h4>
+            <p>
+              The digital marketplace is highly competitive and constantly
+              evolving, with brands competing for attention across search engines,
+              social media, and content platforms.
+            </p>
+          </div>
+        </div>
+
+        <!-- Automation Engine -->
+        <div class="col-md-4">
+          <div class="service-box">
+            <div class="service-icon">⚙️</div>
+            <h4>Automation Engine</h4>
+            <p>
+              Automated scanning of web, social media, and content sources using
+              intelligent data pipelines for real-time insights.
+            </p>
+          </div>
+        </div>
+
+        <!-- Data Intelligence -->
+        <div class="col-md-4">
+          <div class="service-box">
+            <div class="service-icon">🧠</div>
+            <h4>Data Intelligence</h4>
+            <p>
+              Converts noisy, unstructured digital signals into clean,
+              actionable market intelligence dashboards for better decision making.
+            </p>
+          </div>
+        </div>
+
+        <!-- Software Testing -->
+        <div class="col-md-4">
+          <div class="service-box">
+            <div class="service-icon">💻</div>
+            <h4>Software Testing</h4>
+            <p>
+              A Website is an extension of yourself and we can help you to express 
+              it properly. Your website is your number one marketing asset because 
+              we live in a digital age.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  
+  <!-- Axios -->
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  
+  <!-- Custom JS -->
+  <script src="app.js"></script>
+</body>
+</html>
