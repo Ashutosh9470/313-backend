@@ -135,14 +135,24 @@
   font-weight: 700;
 }
 
-/* Responsive */
+/* ================= RESPONSIVE - TABLETS (768px) ================= */
 @media (max-width: 768px) {
   .how-it-works {
     padding: 100px 0 60px 0;
   }
 
+  .section-header {
+    margin-bottom: 50px;
+  }
+
   .section-header h1 {
     font-size: 2rem;
+    margin-bottom: 20px;
+  }
+
+  .section-header p {
+    font-size: 1rem;
+    line-height: 1.7;
   }
 
   .work-steps {
@@ -151,11 +161,141 @@
 
   .work-card {
     padding: 35px 25px;
+    border-radius: 14px;
   }
 
   .step-number {
     font-size: 36px;
     top: 20px;
     right: 20px;
+  }
+
+  .work-icon {
+    width: 55px;
+    height: 55px;
+    font-size: 26px;
+    margin-bottom: 18px;
+  }
+
+  .work-card h4 {
+    font-size: 1.4rem;
+    margin-bottom: 12px;
+  }
+
+  .work-card p {
+    font-size: 14px;
+    line-height: 1.7;
+  }
+}
+
+/* ================= RESPONSIVE - SMALL PHONES (576px) ================= */
+@media (max-width: 576px) {
+  .how-it-works {
+    padding: 70px 15px 50px 15px;
+  }
+
+  .section-header {
+    margin-bottom: 40px;
+  }
+
+  .section-header .section-line {
+    width: 60px;
+    height: 4px;
+    margin-bottom: 15px;
+  }
+
+  .section-header h1 {
+    font-size: 1.6rem;
+    margin-bottom: 18px;
+    letter-spacing: 0;
+  }
+
+  .section-header p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    max-width: 100%;
+  }
+
+  .work-steps {
+    row-gap: 20px;
+  }
+
+  .work-card {
+    padding: 30px 22px;
+    border-radius: 12px;
+  }
+
+  .step-number {
+    font-size: 32px;
+    top: 15px;
+    right: 15px;
+    opacity: 0.1;
+  }
+
+  .work-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 12px;
+    font-size: 24px;
+    margin-bottom: 16px;
+  }
+
+  .work-card:hover .work-icon {
+    transform: scale(1.08);
+  }
+
+  .work-card h4 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+
+  .work-card p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+}
+
+/* ================= RESPONSIVE - EXTRA SMALL (320px - 375px) ================= */
+@media (max-width: 375px) {
+  .how-it-works {
+    padding: 60px 15px 40px 15px;
+  }
+
+  .section-header {
+    margin-bottom: 35px;
+  }
+
+  .section-header h1 {
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+  }
+
+  .section-header p {
+    font-size: 0.9rem;
+  }
+
+  .work-card {
+    padding: 25px 20px;
+  }
+
+  .step-number {
+    font-size: 28px;
+    top: 12px;
+    right: 12px;
+  }
+
+  .work-icon {
+    width: 45px;
+    height: 45px;
+    font-size: 22px;
+    margin-bottom: 14px;
+  }
+
+  .work-card h4 {
+    font-size: 1.1rem;
+  }
+
+  .work-card p {
+    font-size: 0.9rem;
   }
 }

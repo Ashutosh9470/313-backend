@@ -147,21 +147,141 @@ a:hover .service-box {
   font-weight: 700;
 }
 
-/* Responsive */
+/* ================= RESPONSIVE - TABLETS (768px) ================= */
 @media (max-width: 768px) {
   .services-page {
     padding: 100px 0 60px 0;
   }
 
+  .services-header {
+    margin-bottom: 50px;
+  }
+
   .services-header h2 {
     font-size: 2rem;
+    margin-bottom: 20px;
+  }
+
+  .services-header h3 {
+    font-size: 1rem;
+  }
+
+  .services-header p {
+    font-size: 1rem;
+    line-height: 1.7;
   }
 
   .services-grid {
+    grid-template-columns: 1fr;
     row-gap: 25px;
   }
 
   .service-box {
-    padding: 35px 25px;
+    padding: 30px 25px;
+    border-radius: 14px;
+  }
+
+  .service-box h4 {
+    font-size: 1.3rem;
+  }
+
+  .service-box p {
+    font-size: 0.95rem;
+  }
+
+  .service-icon {
+    font-size: 40px;
+  }
+}
+
+/* ================= RESPONSIVE - SMALL PHONES (576px) ================= */
+@media (max-width: 576px) {
+  .services-page {
+    padding: 70px 0 50px 0;
+  }
+
+  .services-header {
+    margin-bottom: 40px;
+  }
+
+  .services-header .section-line {
+    width: 60px;
+    height: 4px;
+    margin-bottom: 15px;
+  }
+
+  .services-header h3 {
+    font-size: 0.95rem;
+    margin-bottom: 12px;
+  }
+
+  .services-header h2 {
+    font-size: 1.6rem;
+    margin-bottom: 18px;
+    letter-spacing: 0;
+  }
+
+  .services-header p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    max-width: 100%;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+    row-gap: 20px;
+    column-gap: 0;
+  }
+
+  .service-box {
+    padding: 25px 20px;
+    border-radius: 12px;
+    text-align: left;
+  }
+
+  .service-icon {
+    font-size: 36px;
+    margin-bottom: 15px;
+  }
+
+  .service-box h4 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+
+  .service-box p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
+}
+
+/* ================= RESPONSIVE - EXTRA SMALL (320px - 375px) ================= */
+@media (max-width: 375px) {
+  .services-page {
+    padding: 60px 15px 40px 15px;
+  }
+
+  .services-header h2 {
+    font-size: 1.4rem;
+  }
+
+  .services-header p {
+    font-size: 0.9rem;
+  }
+
+  .service-box {
+    padding: 20px 18px;
+  }
+
+  .service-icon {
+    font-size: 32px;
+  }
+
+  .service-box h4 {
+    font-size: 1.1rem;
+  }
+
+  .service-box p {
+    font-size: 0.85rem;
   }
 }
